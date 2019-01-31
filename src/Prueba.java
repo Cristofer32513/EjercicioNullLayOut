@@ -63,6 +63,18 @@ class VentanaPrincipal extends JFrame {
 		checkBox3.setBounds(7, 350, 210, 30);
 		checkBox3.setFont(new Font("Times New Roman", 5, 18));
 		add(checkBox3);
+		
+		JLabel label5=new JLabel("Set form width:");
+		label5.setBounds(10, 420, 160, 30);
+		label5.setFont(new Font("Times New Roman", 5, 18));
+		add(label5);
+		
+		JTextField txtCaja2=new JTextField();
+		txtCaja2.setBounds(10, 450, 340, 30);
+		txtCaja2.setFont(new Font("Times New Roman", 5, 18));
+		add(txtCaja2);
+		
+		
 	}
 }
 
