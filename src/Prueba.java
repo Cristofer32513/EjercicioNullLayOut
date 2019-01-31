@@ -74,6 +74,34 @@ class VentanaPrincipal extends JFrame {
 		txtCaja2.setFont(new Font("Times New Roman", 5, 18));
 		add(txtCaja2);
 		
+		JLabel label6=new JLabel("Enhance your form");
+		label6.setBounds(10, 500, 160, 30);
+		label6.setFont(new Font("Times New Roman", 5, 18));
+		add(label6);
+		
+		//INCOMPLETO
+		JCheckBox checkBox4=new JCheckBox("<html> <body>Enable <b>evil</b> popup mode</body></html>");
+		checkBox4.setBounds(7, 525, 220, 30);
+		checkBox4.setFont(new Font("Times New Roman", 5, 18));
+		add(checkBox4);
+		
+		//INCOMPLETO
+		JCheckBox checkBox5=new JCheckBox("<html> <body>Disable all <b>JavaScript</b></body></html>");
+		checkBox5.setBounds(7, 550, 220, 30);
+		checkBox5.setFont(new Font("Times New Roman", 5, 18));
+		add(checkBox5);
+		
+		//INCOMPLETO
+		JCheckBox checkBox6=new JCheckBox("Include archive link");
+		checkBox6.setBounds(7, 575, 200, 30);
+		checkBox6.setFont(new Font("Times New Roman", 5, 18));
+		add(checkBox6);
+		
+		//INCOMPLETO
+		JCheckBox checkBox7=new JCheckBox("<html> <body>Include <b>MonkeyRewards link</b></body></html>");
+		checkBox7.setBounds(7, 600, 250, 30);
+		checkBox7.setFont(new Font("Times New Roman", 5, 18));
+		add(checkBox7);
 		
 	}
 }
