@@ -103,6 +103,19 @@ class VentanaPrincipal extends JFrame {
 		checkBox7.setFont(new Font("Times New Roman", 5, 18));
 		add(checkBox7);
 		
+		JLabel label7=new JLabel("Preview");
+		label7.setBounds(380, 10, 160, 30);
+		label7.setFont(new Font("Arial", 5	, 24));
+		add(label7);
+		
+		JPanel panel1=new JPanel(null);
+			panel1.setBorder(BorderFactory.createTitledBorder(""));
+			panel1.setBounds(380, 40, 800, 300);
+			
+	
+			
+			
+		add(panel1);
 	}
 }
 
