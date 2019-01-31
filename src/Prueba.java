@@ -21,7 +21,11 @@ class VentanaPrincipal extends JFrame {
 		label2.setBounds(10, 60, 120, 40);
 		label2.setFont(new Font("Arial", 5, 18));
 		add(label2);
-	
+		
+		JLabel label3=new JLabel("Include the following");
+		label3.setBounds(10, 100, 160, 30);
+		label3.setFont(new Font("Times New Roman", 5, 18));
+		add(label3);
 	
 	}
 }
