@@ -12,7 +12,7 @@ class VentanaPrincipal extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setVisible(true);
 		
-		JLabel label1=new JLabel("<html> <body>The <b>Classic Form</b> Includes all visible fields for this list. </body></html>");
+		JLabel label1=new JLabel("<html> <body>The <b>Classic Form</b> Includes all visible fields for this list</body></html>");
 		label1.setBounds(10, 10, 360, 40);
 		label1.setFont(new Font("Times New Roman", 5, 18));
 		add(label1);
@@ -36,6 +36,19 @@ class VentanaPrincipal extends JFrame {
 		txtCaja1.setBounds(10, 155, 340, 30);
 		txtCaja1.setFont(new Font("Times New Roman", 5, 18));
 		add(txtCaja1);
+		
+		ButtonGroup bg=new ButtonGroup();
+		JRadioButton rb1=new JRadioButton("Only required fields");
+		rb1.setBounds(10, 210, 340, 30);
+		rb1.setFont(new Font("Times New Roman", 5, 18));
+		bg.add(rb1);
+		add(rb1);
+		JRadioButton rb2=new JRadioButton("All fields");
+		rb2.setBounds(10, 235, 340, 30);
+		rb2.setFont(new Font("Times New Roman", 5, 18));
+		bg.add(rb2);
+		add(rb2);
+		
 	}
 }
 
