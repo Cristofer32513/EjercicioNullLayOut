@@ -14,9 +14,13 @@ class VentanaPrincipal extends JFrame {
 		
 		JLabel label1=new JLabel("<html> <body>The <b>Classic Form</b> Includes all visible fields for this list. </body></html>");
 		label1.setBounds(10, 10, 360, 40);
-		label1.setFont(new Font("Arial", 5, 18));
+		label1.setFont(new Font("Times New Roman", 5, 18));
 		add(label1);
 	
+		JLabel label2=new JLabel("<html> <body><b>Form Options</b></body></html>");
+		label2.setBounds(10, 60, 120, 40);
+		label2.setFont(new Font("Arial", 5, 18));
+		add(label2);
 	
 	
 	}
