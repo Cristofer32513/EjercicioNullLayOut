@@ -22,11 +22,15 @@ class VentanaPrincipal extends JFrame {
 		label2.setFont(new Font("Arial", 5, 18));
 		add(label2);
 		
-		JLabel label3=new JLabel("Include the following");
+		JLabel label3=new JLabel("Include the following:");
 		label3.setBounds(10, 100, 160, 30);
 		label3.setFont(new Font("Times New Roman", 5, 18));
 		add(label3);
-	
+		
+		JCheckBox checkBox1=new JCheckBox("A title for your form");
+		checkBox1.setBounds(7, 125, 175, 30);
+		checkBox1.setFont(new Font("Times New Roman", 5, 18));
+		add(checkBox1);
 	}
 }
 
