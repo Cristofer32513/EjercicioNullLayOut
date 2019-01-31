@@ -54,6 +54,15 @@ class VentanaPrincipal extends JFrame {
 		label4.setBounds(30, 265, 200, 30);
 		label4.setFont(new Font("Times New Roman", 5, 12));
 		add(label4);
+		
+		JCheckBox checkBox2=new JCheckBox("Interest group fields");
+		checkBox2.setBounds(7, 320, 175, 30);
+		checkBox2.setFont(new Font("Times New Roman", 5, 18));
+		add(checkBox2);
+		JCheckBox checkBox3=new JCheckBox("Required fields indicators");
+		checkBox3.setBounds(7, 350, 210, 30);
+		checkBox3.setFont(new Font("Times New Roman", 5, 18));
+		add(checkBox3);
 	}
 }
 
