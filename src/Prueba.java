@@ -1,3 +1,9 @@
+import javax.swing.*;
+import java.awt.*;
+
+class VentanaPrincipal extends JFrame {
+	
+}
 
 public class Prueba {
 
