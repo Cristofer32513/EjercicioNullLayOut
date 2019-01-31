@@ -31,6 +31,11 @@ class VentanaPrincipal extends JFrame {
 		checkBox1.setBounds(7, 125, 175, 30);
 		checkBox1.setFont(new Font("Times New Roman", 5, 18));
 		add(checkBox1);
+		
+		JTextField txtCaja1=new JTextField("Subscribe to our mailing list");
+		txtCaja1.setBounds(10, 155, 340, 30);
+		txtCaja1.setFont(new Font("Times New Roman", 5, 18));
+		add(txtCaja1);
 	}
 }
 
