@@ -38,17 +38,22 @@ class VentanaPrincipal extends JFrame {
 		add(txtCaja1);
 		
 		ButtonGroup bg=new ButtonGroup();
-		JRadioButton rb1=new JRadioButton("Only required fields");
+		JRadioButton rb1=new JRadioButton("   Only required fields");
 		rb1.setBounds(10, 210, 340, 30);
 		rb1.setFont(new Font("Times New Roman", 5, 18));
 		bg.add(rb1);
 		add(rb1);
-		JRadioButton rb2=new JRadioButton("All fields");
+		JRadioButton rb2=new JRadioButton("   All fields");
 		rb2.setBounds(10, 235, 340, 30);
 		rb2.setFont(new Font("Times New Roman", 5, 18));
 		bg.add(rb2);
 		add(rb2);
 		
+		//INCOMPLETO
+		JLabel label4=new JLabel("<html> <body>(edit required fields in <b>the form builder</b>)</body></html>");
+		label4.setBounds(30, 265, 200, 30);
+		label4.setFont(new Font("Times New Roman", 5, 12));
+		add(label4);
 	}
 }
 
