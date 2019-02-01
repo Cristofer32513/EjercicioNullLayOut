@@ -49,8 +49,7 @@ class VentanaPrincipal extends JFrame {
 		bg.add(rb2);
 		add(rb2);
 		
-		//INCOMPLETO
-		JLabel label4=new JLabel("<html> <body>(edit required fields in <b>the form builder</b>)</body></html>");
+		JLabel label4=new JLabel("<html><body>(edit required fields in <font color=aqua>the form builder</font></body></html>");
 		label4.setBounds(30, 265, 200, 30);
 		label4.setFont(new Font("Times New Roman", 5, 12));
 		add(label4);
