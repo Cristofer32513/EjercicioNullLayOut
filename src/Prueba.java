@@ -5,7 +5,7 @@ class VentanaPrincipal extends JFrame {
 	public VentanaPrincipal(){
 		//getContentPane().setLayout(new FlowLayout());//Layout del JFrame
 		getContentPane().setLayout(null);
-		setSize(1050, 650);
+		setSize(1000, 650);
 		setTitle("Formulario de Registro");
 		setLocationRelativeTo(null);
 		setResizable(false);
@@ -35,6 +35,7 @@ class VentanaPrincipal extends JFrame {
 		JTextField txtCaja1=new JTextField("Subscribe to our mailing list");
 		txtCaja1.setBounds(10, 165, 340, 30);
 		txtCaja1.setFont(new Font("Times New Roman", 5, 18));
+		txtCaja1.setBackground(new Color(240, 240, 240));
 		add(txtCaja1);
 		
 		ButtonGroup bg=new ButtonGroup();
@@ -49,7 +50,7 @@ class VentanaPrincipal extends JFrame {
 		bg.add(rb2);
 		add(rb2);
 		
-		JLabel label4=new JLabel("<html><body>(edit required fields in <font color=aqua>the form builder</font>)</body></html>");
+		JLabel label4=new JLabel("<html><body>(edit required fields in <font color=blue>the form builder</font>)</body></html>");
 		label4.setBounds(30, 280, 230, 30);
 		label4.setFont(new Font("Times New Roman", 5, 14));
 		add(label4);
@@ -71,6 +72,7 @@ class VentanaPrincipal extends JFrame {
 		JTextField txtCaja2=new JTextField();
 		txtCaja2.setBounds(10, 430, 340, 30);
 		txtCaja2.setFont(new Font("Times New Roman", 5, 18));
+		txtCaja2.setBackground(new Color(240, 240, 240));
 		add(txtCaja2);
 		
 		JLabel label6=new JLabel("Enhance your form");
@@ -95,7 +97,7 @@ class VentanaPrincipal extends JFrame {
 		checkBox6.setFont(new Font("Times New Roman", 5, 18));
 		add(checkBox6);
 		
-		JCheckBox checkBox7=new JCheckBox("<html><body>Include <font color=aqua>MonkeyRewards link</font></body></html>");
+		JCheckBox checkBox7=new JCheckBox("<html><body>Include <font color=blue>MonkeyRewards link</font></body></html>");
 		checkBox7.setBounds(7, 590, 250, 30);
 		checkBox7.setFont(new Font("Times New Roman", 5, 18));
 		add(checkBox7);
@@ -107,12 +109,29 @@ class VentanaPrincipal extends JFrame {
 		
 		JPanel panel1=new JPanel(null);
 			panel1.setBorder(BorderFactory.createTitledBorder(""));
-			panel1.setBounds(380, 40, 650, 250);
-			
-	
-			
+			panel1.setBounds(380, 40, 600, 260);
 			
 		add(panel1);
+		
+		JLabel label8=new JLabel("Copy/past Onto your site");
+		label8.setBounds(380, 320, 300, 30);
+		label8.setFont(new Font("Arial", 5	, 24));
+		add(label8);
+		
+		JTextArea txtCaja3=new JTextArea();
+		txtCaja3.setText("<html>\n\n<head>\n<title>El primer documento HTML</title>\n</head>"
+				+ "\n\n<body>\n<p>El lenguaje HTML es <strong>tan sencillo</strong> que"
+				+ "prácticamente se entiende sin estudiar el significadode sus etiquetas"
+				+ "principales.</p>\n</body>\n\n</html>");
+		txtCaja3.setBounds(380, 360, 600, 250);
+		txtCaja3.setFont(new Font("Times New Roman", 5, 16));
+		txtCaja3.setBackground(new Color(230, 230, 230));
+		txtCaja3.setEditable(false);
+		txtCaja3.setBorder(BorderFactory.createTitledBorder(""));
+		txtCaja3.setLineWrap(true);
+		txtCaja3.setWrapStyleWord(true);
+		add(txtCaja3);
+		
 	}
 }
 
@@ -120,7 +139,7 @@ public class Prueba {
 
 	public static void main(String[] args) {
 		try {
-			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
